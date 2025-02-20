@@ -14,8 +14,9 @@
 
 int main()
 {
-    ClapTrap one("test");
-    std::cout << one.getHealth() << std::endl;
-    std::cout << one.getEnergy() << std::endl;
-    std::cout << one.getDamage() << std::endl;
+    ClapTrap one("one");
+    ClapTrap two("two");
+    two.takeDamage(3);
+    one.attack("two");
+    std::cout << two.getHealth() << std::endl;
 }

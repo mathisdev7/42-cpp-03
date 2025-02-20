@@ -67,7 +67,7 @@ void ClapTrap::attack(const std::string& target)
 {
     if (this->getEnergy() > 0 && this->getHealth() > 0)
     {
-        std::cout << "ClapTrap " << this->_name << " attacks " << target << ", causing " << this->getDamage() << "points of damage!" << std::endl;
+        std::cout << "ClapTrap " << this->_name << " attacks " << target << ", causing " << this->getDamage() << " points of damage!" << std::endl;
         this->setEnergy(this->_energy - 1);
     }
     else
@@ -77,8 +77,9 @@ void ClapTrap::attack(const std::string& target)
 }
 void ClapTrap::takeDamage(unsigned int amount)
 {
-    std::cout << "ClapTrap " << this->_name << " took " << amount << " damages" << this->_health - amount << " left!" << std::endl;
+    std::cout << "ClapTrap " << this->_name << " took " << amount << " damages, " << this->_health - amount << " left!" << std::endl;
     this->setHealth(this->_health - amount);
+    this->setDamage(amount);
 }
 void ClapTrap::beRepaired(unsigned int amount)
 {
