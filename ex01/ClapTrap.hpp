@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 18:21:24 by mazeghou          #+#    #+#             */
-/*   Updated: 2025/02/20 12:18:35 by mazeghou         ###   ########.fr       */
+/*   Updated: 2025/02/20 12:46:44 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 class ClapTrap
 {
-private:
+protected:
 	std::string _name;
 	unsigned int _health;
 	unsigned int _energy;

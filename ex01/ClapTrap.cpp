@@ -6,7 +6,7 @@
 /*   By: mazeghou <mazeghou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 18:25:56 by mazeghou          #+#    #+#             */
-/*   Updated: 2025/02/20 12:46:39 by mazeghou         ###   ########.fr       */
+/*   Updated: 2025/02/20 12:18:36 by mazeghou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,5 +111,5 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &src)
 	this->_health = src._health;
 	this->_energy = src._energy;
 	this->_damage = src._damage;
-	return (*this);
+	return *this;
 }
