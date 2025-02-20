@@ -23,9 +23,11 @@ class ClapTrap
         int _damage;
     public:
         ClapTrap(std::string name);
-        int ClapTrap::getHealth(void);
-        int ClapTrap::getEnergy(void);
-        int ClapTrap::getDamage(void);
+        ClapTrap(const ClapTrap &src);
+        ~ClapTrap(void);
+        int getHealth(void);
+        int getEnergy(void);
+        int getDamage(void);
         void setHealth(int health);
         void setEnergy(int energy);
         void setDamage(int damage);

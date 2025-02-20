@@ -17,5 +17,5 @@ int main()
     ClapTrap one("test");
     std::cout << one.getHealth() << std::endl;
     std::cout << one.getEnergy() << std::endl;
-    std::cout << one.get() << std::endl;
+    std::cout << one.getDamage() << std::endl;
 }
